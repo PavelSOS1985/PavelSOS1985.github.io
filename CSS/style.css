@@ -1,3 +1,50 @@
 ul {
     list-style: none;
+    padding: 0;
+}
+.main-title {
+    text-align: center;
+    border-bottom: 4px solid #007BFF;
+    padding: 20px;
+    font-weight: 800;
+    color: #007BFF;
+}
+.nav-link a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: relative;
+    color: #007BFF;
+}
+.nav-link a:hover {
+    color: #007BFF;
+}
+.nav-link:after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: #007bff;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+
+}
+.nav-link:hover:after {
+    width: 60%;
+    transition: 0.5s;
+}
+.main {
+    padding: 20px 0;
+}
+.books-list {
+    margin-top: 40px;
+}
+.books-list__item {
+    margin-bottom: 30px;
+}
+.book-title {
+    margin-bottom: 10px;
 }
